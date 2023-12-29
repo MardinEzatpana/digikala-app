@@ -12,6 +12,7 @@ const Log = () => {
       >
         <svg
           className="h-10 w-10 stroke-dark_3"
+          fill="none"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"

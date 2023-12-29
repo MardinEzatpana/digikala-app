@@ -1,6 +1,9 @@
+import Hero from "./ui/home/hero/Hero";
 
 export default function Home() {
   return (
-    <div>خانه</div>
+    <div className="flex flex-col gap-3">
+      <Hero />
+    </div>
   )
 }

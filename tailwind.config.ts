@@ -18,6 +18,14 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        iransans: "iransans",
+        iransansnum: "iransansnum",
+        iransansbold: "iransansbold",
+        iranyekan: "iranyekan",
+        iranyekan_bold: "iranyekan_bold",
+        yekan: "yekan",
+      },
       colors: {
         success: " #07bc0c",
         error: "#e74c3c",
@@ -116,7 +124,26 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("daisyui"), require("tailwindcss-animate")],
+  daisyui: {
+    themes: [
+      {
+        lightTheme: {
+          primary: "#2079c5",
+          secondary: "#1ccaff",
+          accent: "#2a9d8f",
+          neutral: "#264653",
+          "base-100": "#ffffff",
+          info: "#778ad4",
+          success: "#23b893",
+          warning: "#f79926",
+          error: "#ea535a",
+          body: {
+          },
+        },
+      },
+    ],
+  },
 } satisfies Config
 
 export default config
