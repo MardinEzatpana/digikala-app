@@ -104,7 +104,7 @@ const config = {
         },
       },
       borderRadius: {
-        lg: "var(--radius)",
+        lg: "5px",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
@@ -122,6 +122,14 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+    },
+    screens: {
+      xs: "420px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      xxl: "1536px",
     },
   },
   plugins: [require("daisyui"), require("tailwindcss-animate")],
