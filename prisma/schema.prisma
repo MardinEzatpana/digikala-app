@@ -20,6 +20,10 @@ model Product {
   image_url           String
   title               String
   updatedAt           DateTime              @db.Date
+  off_percent         Int
+  price               Int
+  selling_type        String
+  status              Boolean
 
   @@map("products")
 }

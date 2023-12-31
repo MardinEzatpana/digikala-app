@@ -2,6 +2,7 @@ import { MainCatsWithSpecificCats } from "@/types/type";
 import Hero from "./ui/home/hero/Hero";
 import { prisma } from "@/lib/db/prisma";
 import Cat_section_2 from "./ui/home/cat_section_2";
+import AdSlider from "./ui/home/ad_slider/AdSlider";
 
 export default async function Home() {
   const cats: MainCatsWithSpecificCats[] = await prisma.main_cat.findMany({
@@ -16,6 +17,7 @@ export default async function Home() {
         </h1>
         <Cat_section_2 cats={cats} />
       </div>
+      <AdSlider />
     </div>
   )
 }

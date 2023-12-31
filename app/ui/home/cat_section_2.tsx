@@ -8,7 +8,6 @@ interface Props {
 }
 
 const Cat_section_2 = async ({ cats }: Props) => {
-  console.log(cats)
   return (
     <div className="flex flex-col items-center justify-center gap-7 py-6">
       <div className="w-full px-2 flex flex-col-reverse items-center justify-center gap-4">

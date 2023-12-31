@@ -33,7 +33,7 @@ export function CatsMenu({ mainCats }: Props) {
           <NavigationMenuList>
             {mainCats.map((cat) => {
               return (
-                <NavigationMenuItem key={cat.id}>
+                <NavigationMenuItem  key={cat.id}>
                   <NavigationMenuTrigger className="text-xl flex items-center gap-1">
                     {cat.title === "نوشیدنی ها" && (
                       <DrinksIcon classes="h-8 w-8 fill-dark_4" />
@@ -43,13 +43,13 @@ export function CatsMenu({ mainCats }: Props) {
                     )}
                     {cat.title}
                   </NavigationMenuTrigger>
-                  <NavigationMenuContent className="bg-slate-100 rounded-xl border-transparent">
-                    <ul className="grid gap-3 p-4 md:w-[700px] md:grid-cols-5 md:grid-rows-2 items-stretch">
+                  <NavigationMenuContent className=" rounded-xl border-transparent">
+                    <ul className="grid gap-3 p-4 md:w-[260px] md:grid-cols-2 md:grid-rows-2 items-stretch">
                       <li className="row-span-2">
                         <NavigationMenuLink asChild>
                           <Link
-                            className="flex h-full w-full select-none flex-col justify-evenly items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                            href={`/${cat.label}`}
+                            className="flex h-full w-full select-none flex-col justify-evenly items-center rounded-md from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                            href="#"
                           >
                             <Image
                               src={cat.image}
@@ -68,7 +68,7 @@ export function CatsMenu({ mainCats }: Props) {
                           <ListItem
                             className="flex flex-col h-full justify-between border rounded-xl border-opacity-20 border-g1_7 items-stretch font-iransansbol hover:border-opacity-80"
                             key={specific.id}
-                            href={`/search/${specific.label}`}
+                            href="#"
                             title={specific.title}
                           >
                             <Image
@@ -104,7 +104,7 @@ const ListItem = React.forwardRef<React.ElementRef<"a">, ListItemType2>(
           <Link
             ref={ref}
             className={cn(
-              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
               className
             )}
             {...props}

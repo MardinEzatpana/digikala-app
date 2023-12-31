@@ -1,0 +1,50 @@
+"use client";
+import React from "react";
+import { Product } from "@prisma/client";
+import Price from "./components/price/Price";
+import Link from "next/link";
+import Status from "./components/Status";
+import ImageComponent from "./components/ImageComponent";
+import Title from "./components/Title";
+interface Props {
+  product: Product;
+  index: number;
+}
+
+const Product_slid_card = ({
+  product: {
+    title,
+    status,
+    selling_type,
+    price,
+    off_percent,
+    image_url,
+    id,
+  },
+  index,
+}: Props) => {
+  return (
+    <div
+      className={`relative bg-light_1 overflow-hidden shadow-md h-full transition-all duration-150 hover:scale-[1.015] hover:shadow-lg ${
+        index === 0 && "rounded-tr-xl rounded-br-xl"
+      }`}
+    >
+      <Link href={`/product/${id}`} className=" h-full grid grid-rows-3 p-3">
+        <ImageComponent image_url={image_url} title={title} />
+        <div className="h-full flex flex-col justify-between py-2">
+          <Title title={title} />
+          <Status type={selling_type} />
+          {status ? (
+            <Price price={price} off_percent={off_percent} />
+          ) : (
+            <p className="font-iranyekan_bold text-xl text-red-400 mt-auto mb-3">
+              اتمام موجودی
+            </p>
+          )}
+        </div>
+      </Link>
+    </div>
+  );
+};
+
+export default Product_slid_card;

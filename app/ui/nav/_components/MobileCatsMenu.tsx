@@ -32,7 +32,7 @@ const MobileCatsMenu = ({ cats }: Props) => {
     SelectedTab.Drinks
   );
   return (
-    <div className=" md:hidden">
+    <div className=" sm:hidden">
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger
           onClick={() => {
@@ -59,7 +59,7 @@ const MobileCatsMenu = ({ cats }: Props) => {
                     key={mainCat.id}
                     value={mainCat.id}
                     className={`pt-6 border-transparent w-full !bg-transparent duration-0 border-b-[3px] ${
-                      selectedTab === mainCat.label ? "!bg-white" : ""
+                      selectedTab === mainCat.label ? "!bg-white !text-blue-500" : ""
                     }`}
                     onClick={() => {
                       if (mainCat.label === "tools") {
@@ -111,7 +111,7 @@ const MobileCatsMenu = ({ cats }: Props) => {
                         <SheetClose key={specific.id} asChild>
                           <Link href="#">
                             <div className="flex flex-col gap-2 items-center justify-center">
-                              <div className="bg-slate-200 w-24 h-24 md:w28 md:h-28 flex justify-center items-center rounded-full">
+                              <div className=" border-[1px] w-24 h-24 md:w-28 md:h-28 flex justify-center items-center rounded-full">
                                 <Image
                                   alt={specific.title}
                                   width={40}
