@@ -6,7 +6,7 @@ import { Hero_slide_type } from "../products_Slider/hero_slide";
 
 const AdSlider = async () => {
   const adProducts = await prisma.product.findMany({
-    take: 4,
+    take: 8,
     where: {
       status: true,
     },
