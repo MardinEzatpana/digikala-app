@@ -32,6 +32,7 @@ const Cat_section_2 = async ({ cats }: Props) => {
                         width={100}
                         height={100}
                         alt={specific.title}
+                        className="h-52 w-52 object-contain rounded-full p-3"
                       />
                       <h2 className="font-iranyekan_bold text-dark_1 text-xl">
                         {specific.title}

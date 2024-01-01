@@ -6,7 +6,7 @@ import { MainCatsWithSpecificCats } from "@/types/type";
 import { prisma } from "@/lib/db/prisma";
 
 export const metadata: Metadata = {
-  title: "Digikala",
+  title: "دیجی کالا",
   description: "Digikala clone",
 };
 

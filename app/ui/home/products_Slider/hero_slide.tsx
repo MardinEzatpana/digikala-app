@@ -38,6 +38,7 @@ const HeroSlide = ({
           height={100}
           width={100}
           alt={title || "پیشنهاد شگفت انگیز"}
+          className="rounded-full "
         />
         <Link
           className="text-[1.4rem] font-iransans text-gray-50 flex items-center hover:text-red-400 hover:fill-red-400"

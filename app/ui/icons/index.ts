@@ -1,5 +1,6 @@
 import HelpIcon from "./helpIcon";
-import LogoDG from "./digikala-logo.png";
+import LogoDG from "./logo.png";
+import NavTop from "./nav-top.webp";
 import SearchIcon from "./SearchIcon";
 import CartIcon from "./CartIcon";
 import AllIcon from "./AllIcon";
@@ -13,6 +14,7 @@ import PercentIcon from "./PercentIcon";
 export {
     HelpIcon,
     LogoDG,
+    NavTop,
     SearchIcon,
     CartIcon,
     AllIcon,
