@@ -10,6 +10,11 @@ import ToolsIcon from "./ToolsIcon";
 import BoxingIcon from "./BoxingIcon";
 import BlogIcon from "./BlogIcon";
 import PercentIcon from "./PercentIcon";
+import InstagramIcon from "./InstagramIcon";
+import LinkedinIcon  from "./LinkedinIcon";
+import TwitterIcon from "./TwitterIcon";
+import YoutubeIcon from "./YoutubeIcon";
+
 
 export {
     HelpIcon,
@@ -23,6 +28,10 @@ export {
     ToolsIcon,
     BoxingIcon,
     BlogIcon,
-    PercentIcon
+    PercentIcon,
+    InstagramIcon,
+    LinkedinIcon,
+    TwitterIcon,
+    YoutubeIcon
 
 }
