@@ -14,6 +14,9 @@ import InstagramIcon from "./InstagramIcon";
 import LinkedinIcon  from "./LinkedinIcon";
 import TwitterIcon from "./TwitterIcon";
 import YoutubeIcon from "./YoutubeIcon";
+import GuaranteeIcon from "./GuaranteeIcon";
+import OrdersIcon from "./OrdersIcon";
+import ShippingIcon from "./ShippingIcon";
 
 
 export {
@@ -32,6 +35,9 @@ export {
     InstagramIcon,
     LinkedinIcon,
     TwitterIcon,
-    YoutubeIcon
+    YoutubeIcon,
+    GuaranteeIcon,
+    OrdersIcon,
+    ShippingIcon
 
 }
